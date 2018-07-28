@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".EmergencyActivity"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/emergency_top"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/materialbackground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency"
+        android:textSize="30dp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:layout_marginTop="35dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/emergency_top"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_local_hospital_black_24dp">
+            </ImageView>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:id="@+id/call_ambulance"
+                android:text="Ambulance"
+                android:layout_marginLeft="10dp"
+                android:onClick="BtnCallAmbulance_onClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_security_black_24dp">
+            </ImageView>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:id="@+id/call_police"
+                android:text="Police"
+                android:layout_marginLeft="10dp"
+                android:onClick="BtnCallPolice_onClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_local_taxi_black_24dp">
+            </ImageView>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:id="@+id/call_taxi_g"
+                android:text="Georgetown Taxi"
+                android:layout_marginLeft="10dp"
+                android:onClick="BtnCallTaxiG_onClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_airport_shuttle_black_24dp">
+            </ImageView>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:id="@+id/call_taxi_a"
+                android:text="Airport Taxi Service"
+                android:layout_marginLeft="10dp"
+                android:onClick="BtnCallTaxiA_onClick"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
